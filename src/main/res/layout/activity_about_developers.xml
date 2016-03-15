@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ladoo.myapplication.AboutDevelopers">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/vikas"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/VikasimageView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Developer\nVikas M Biradargpudar\nDevelopers@vebmate.com"
+        android:layout_marginTop="20dp"
+        android:id="@+id/TextVikasAbout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/VikasimageView"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view3"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/TextVikasAbout"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/santosh"
+        android:layout_marginTop="20dp"
+        android:id="@+id/SantoshImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/TextSantoshAbout"
+        android:text="PHP Developer\nSantosh D\nDevelopers@vebmate.com"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/SantoshImageView"
+        />
+
+
+</RelativeLayout>
+</ScrollView>

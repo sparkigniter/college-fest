@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="50dp"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_about"
+        android:onClick="EnterAboutInvento"
+        android:id="@+id/imageInvento"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invento 2k16"
+            android:textSize="15sp"
+            android:id="@+id/textInvento"
+            android:layout_below="@+id/imageInvento" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageEvents"
+            android:onClick="EnterEvents"
+            android:background="@drawable/button_events"
+           android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events        "
+            android:textSize="15sp"
+            android:layout_below="@+id/imageEvents"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView4" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shedule"
+            android:id="@+id/imageShedule"
+            android:layout_marginTop="61dp"
+            android:onClick="EnterSchedule"
+
+            android:layout_below="@+id/textInvento"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageShedule"
+            android:layout_marginTop="65dp"
+            android:id="@+id/imageGallery"
+            android:onClick="EnterGallery"
+            android:background="@drawable/button_gallery"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo Gallery"
+            android:textSize="15sp"
+
+            android:layout_below="@+id/imageGallery"
+            android:id="@+id/textView6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageShedule"
+            android:text="    Schedule"
+            android:textSize="15sp"
+            android:id="@+id/textView5" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_register"
+            android:layout_above="@+id/imageGallery"
+            android:onClick="RegisterEnter"
+            android:layout_alignLeft="@+id/imageEvents"
+            android:id="@+id/imageRegister"
+            android:layout_alignStart="@+id/imageEvents" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textRegister"
+            android:text="Register"
+
+            android:textSize="15sp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_sponsor"
+            android:id="@+id/imageSponsor"
+            android:onClick="EnterSponsors"
+            android:layout_alignTop="@+id/imageGallery"
+            android:layout_alignLeft="@+id/imageRegister"
+            android:layout_alignStart="@+id/imageRegister" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sponsors"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_alignLeft="@+id/textRegister"
+            android:textSize="15sp"
+            android:layout_alignStart="@+id/textRegister" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FloatingButtonShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/share"
+            android:onClick="EnterShare"
+            android:background="#d4d72511"
+            android:layout_below="@+id/textView6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FloatingButtonShare"
+            android:textColor="#4451c1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="AboutDevelopers"
+            android:text="About Developers\n"
+            />
+    </RelativeLayout>
+    </ScrollView>
+

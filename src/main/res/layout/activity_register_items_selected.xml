@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context=".RegisterItemsSelected">
+    <ListView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/eventsCheckableList"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/showdeatils"
+        android:text="Details"
+        android:onClick="SelectEventItems"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+         />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:text="Register"
+        android:onClick="EnterTermsAndConditions"
+        android:layout_alignTop="@+id/showdeatils"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+         />
+
+</RelativeLayout>
+
+
+

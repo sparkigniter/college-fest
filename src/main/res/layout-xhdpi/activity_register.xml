@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ladoo.myapplication.RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewRegisterName"
+            android:text="Enter your name"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginTop="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextRegisterName"
+            android:layout_below="@+id/TextViewRegisterName"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewRegisterCollege"
+            android:text="Enter your College"
+            android:textSize="15dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/EditTextRegisterName"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextRegisterCollege"
+            android:layout_below="@+id/TextViewRegisterCollege"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewRegisterEmail"
+            android:text="Enter your Email"
+            android:textSize="15dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/EditTextRegisterCollege" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextRegisterEmail"
+            android:layout_below="@+id/TextViewRegisterEmail"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewRegisterPhoneno"
+            android:text="Enter your Phone number"
+            android:textSize="15dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/EditTextRegisterEmail"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextRegisterPhoneno"
+            android:layout_below="@+id/TextViewRegisterPhoneno"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_registerok"
+            android:layout_below="@+id/EditTextRegisterPhoneno"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:onClick="OnClickRegister"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</ScrollView>
